@@ -3,17 +3,17 @@ import Title from "./Title";
 
 function Intro() {
     return(
-        <div className="flex mx-5 items-center flex-col text-left pt-20 pb-6">
-            <h1 className="text-red text-6xl md:text7xl mb-1 md:mb-3 font-bold">
+        <div className="w-1/2 md:w-1/3 mx-auto justify-center flex flex-col text-left pt-20 pb-6">
+            <h1 className="text-red font-bold text-6xl md:text7xl mb-1 md:mb-3">
                 Francis Fernandez
             </h1>
-            <p className="text-base md:text-xl mb-6 font-medium">
+            <p className="text-base text-xl mb-6 font-medium">
                 Computer Science Student
             </p>
             <div>
                 <Title>About Me</Title>
             </div>
-            <p className="text-base max-w-xl mb-6 font-medium">
+            <p className="text-base mb-6 font-medium">
                 A rising junior at{' '}
                 <a 
                     href="https://www.sdsu.edu/" target="blank" 
