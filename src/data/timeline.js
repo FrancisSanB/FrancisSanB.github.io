@@ -1,37 +1,16 @@
 export default [
     {
-        year: 'Today',
-        title: 'Youtube Content Creator',
-        duration: '6 years',
-        details:
-            'My humble attempt at building my version of the digital world one step at a time by documenting my coding journey and creating software engineering and computer science content to help those coming behind me'
+        company: 'Le Laboratoire CREATIS',
+        imgUrl: 'assets/creatis.jpg',
+        title: 'Student Researcher',
+        duration: 'Sep 2023 - Feb 2024 · 6 mos',
+        link: 'https://www.creatis.insa-lyon.fr/'
     },
     {
-        year: 'Today',
-        title: 'Youtube',
-        duration: '3 years',
-        details:
-            'My humble at building my version of the digital world one step at a time by documenting my coding journey and creating software engineering and computer science content to '
-    },
-    {
-        year: '2019',
-        title: 'Content Creator',
-        duration: '12 years',
-        details:
-            'My humble attempt at building my  of the digital world one step at a time  documenting my coding  and creating software engineering and computer science content to help those coming behind me'
-    },
-    {
-        year: '2018',
-        title: 'Youtube Creator',
-        duration: '2 years',
-        details:
-            'My humble attempt at  my version of the digital world one step at a time by  my coding journey and creating software  and behind me'
-    },
-    {
-        year: '2013',
-        title: 'Youtube Content',
-        duration: '1738 years',
-        details:
-            'My humble attempt at building my  of the digital world one step at  time by documenting my coding journey  creating software  and computer science  to help  me'
-    },
+        company: 'CS Education Lab (SDSU)',
+        imgUrl: 'assets/sdsuscience.jpg',
+        title: 'Research Assistant',
+        duration: 'Oct 2022 - May 2023 · 8 mos',
+        link: 'https://cs.sdsu.edu/'
+    }
 ]

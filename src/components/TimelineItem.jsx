@@ -1,26 +1,34 @@
 import React from "react";
 
-function TimelineItem({ year, title, duration, details }) {
+function TimelineItem({ company, imgUrl, title, duration, link}) {
     return(
-        <ol className="flex flex-col md:flex-row relative border-l border-stone-200">
-            <li className="mb-10 ml-4">
-                <div className="absolute w-3 h-3 bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white" />
-                <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
-                    <span className="inline-block px-2 py-1 font-semibold text-white bg-red rounded-md">
-                        {year}
-                    </span>
-                    <h3 className="text-lg font-semibold text-stone-900">
-                        {title}
-                    </h3>
-                    <div className="my-1 text-sm font-normal leading-none text-stone-400">
-                        {duration}
+        <a href={link} target="_blank">
+        <ol className="flex flex-col hover:bg-slate-200 rounded-lg my-6">
+            <li>
+                <p className="flex flex-wrap flex-row gap-4 items-center justify-start text-xs md:text-sm">
+                    <a href={link} target="_blank">
+                        <img 
+                            src={imgUrl}
+                            alt="portfolio"
+                            className="w-full h-9 md:h-12 rounded-lg object-cover cursor-pointer"
+                        />
+                    </a>
+                    <div className="flex flex-col">
+                        <span className="inline-block px-2 py-1 font-semibold text-white bg-red rounded-md">
+                            {company}
+                        </span>
+                        <h3 className="text-lg text-stone-900">
+                            {title}
+                        </h3>
                     </div>
-                    <div className="my-2 text-base font-normal text-stone-500">
-                        {details}
+                    
+                    <div className="text-sm font-normal leading-none text-stone-400 ml-auto">
+                        {duration}
                     </div>
                 </p>
             </li>
         </ol>
+        </a>
     )
 }
 
