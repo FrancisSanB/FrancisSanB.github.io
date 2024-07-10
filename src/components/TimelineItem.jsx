@@ -3,9 +3,9 @@ import React from "react";
 function TimelineItem({ company, imgUrl, title, duration, link}) {
     return(
         <a href={link} target="_blank">
-        <ol className="flex flex-col hover:bg-slate-200 rounded-lg my-6">
+        <ol className="flex flex-col hover:bg-slate-200 rounded-lg my-3 p-3">
             <li>
-                <p className="flex flex-wrap flex-row gap-4 items-center justify-start text-xs md:text-sm">
+                <p className="flex flex-row gap-4 items-center justify-start text-xs md:text-sm">
                     <a href={link} target="_blank">
                         <img 
                             src={imgUrl}
