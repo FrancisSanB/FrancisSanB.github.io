@@ -43,32 +43,41 @@ function Intro() {
             <div>
                 <Title>About Me</Title>
             </div>
-            <p className="text-base mb-9 font-medium">
-                A rising junior at{' '}
+            <p className="text-base mb-3 font-medium">
+                Hi and welcome to my website! I'm Francis, a fourth-year computer science student at{' '}
                 <a 
                     href="https://www.sdsu.edu/" target="blank" 
                     className="font-bold hover:underline underline-offset-2 decoration-2 decoration-red" rel="noreferrer noopener"
                 >
                     San Diego State University 
                 </a>
-                {' '}majoring in Computer Science. Studying with 4th year standing 
-                as an honors student with an interest in Data Science and Artificial Intelligence. Involved in various projects 
-                at the {' '}
+                {' '}interested in the field of image processing and computer vision and excited about their applications in the health industry.
+                Currenlty I working on different projects to increase my overall knowledge of computer science and dive deeper into the interactions
+                between computers and images.
+            </p>
+            <p className="text-base mb-9 font-medium">
+                In my free time, I like to{' '}
                 <a 
-                    href="https://aiclub.sdsu.edu/" target="blank" 
+                    href="https://letterboxd.com/alfredoo_sauce/films/diary/" target="blank" 
                     className="font-bold hover:underline underline-offset-2 decoration-2 decoration-red" rel="noreferrer noopener"
                 >
-                    Artificial Intelligence Club
+                    watch movies, 
                 </a>
-                {' '}and the{' '}
+                {' '}improve my{' '}
                 <a 
-                    href="https://www.sdsurocketproject.org/" target="blank" 
+                    href="https://innerfrench.com/" target="blank" 
                     className="font-bold hover:underline underline-offset-2 decoration-2 decoration-red" rel="noreferrer noopener"
                 >
-                    SDSU Rocket Project
+                     french
                 </a>
-                . Currently interested in the field of medical 
-                image processing and looking for internships in that sector
+                {' '}and, if I have the motivation, {' '}
+                <a 
+                    href="https://www.strava.com/athletes/97184275" target="blank" 
+                    className="font-bold hover:underline underline-offset-2 decoration-2 decoration-red" rel="noreferrer noopener"
+                >
+                    run
+                </a>
+                .
             </p>
         </div>
     )

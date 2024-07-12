@@ -34,7 +34,7 @@ function ProjectItem({ title, tags, desc, links }) {
                     </span>
                 ))}
             </p>
-            <p className="text-base font-medium">
+            <p className="text-base font-medium mb-3">
                 {desc}
             </p>
             <div className="flex flex-row gap-3">
@@ -42,6 +42,7 @@ function ProjectItem({ title, tags, desc, links }) {
                     <a
                         href={link.url}
                         target="_blank"
+                        className="flex items-center gap-1 hover:underline underline-offset-2 decoration-2 decoration-red"
                     >
                         {icons[link.icon]}
                         <span>{link.text}</span>

@@ -16,7 +16,7 @@ function Projects() {
                     resume
                 </a>
             </p>
-            <div className="w-full grid grid-cols-1 gap-3 mb-9">
+            <div className="w-full grid grid-cols-1 gap-6 mb-9">
                 {projects.map(project => (
                     <ProjectItem
                         title={project.title}
