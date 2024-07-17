@@ -6,7 +6,7 @@ There are two branches here that matter: master and gh-pages (if the main branch
 
 This website is using Vite's fast development server in the React library template. I use react's component-based architecture along with the Tailwind CSS framework to make this website. This website is mostly simple react components and tailwind layouts.
 
-This [tutorial] (https://www.youtube.com/watch?v=b0pkpcD8Ms4), which is included in the references, was my starting point for this project. Then I played around with the different TailwindCSS classes to make it more personal. After getting more comfortable I started adding features of my own. My inspiration websites are all listed below.
+This [tutorial](https://www.youtube.com/watch?v=b0pkpcD8Ms4 'Tutorial'), which is included in the references, was my starting point for this project. Then I played around with the different TailwindCSS classes to make it more personal. After getting more comfortable I started adding features of my own. My inspiration websites are all listed below.
 
 *Special thanks to Edwin Zhang, whom I cold-emailed asking advice on how to build a website and he pointed me in the right direction.*
 
@@ -22,9 +22,8 @@ This [tutorial] (https://www.youtube.com/watch?v=b0pkpcD8Ms4), which is included
 - https://dillion.io/projects
 - https://thehackershideout.com/
 
-## TODO
+### TODO
 - dark mode with dark color pallete
-- add relevent projects section
 - update readme
 - rewrite intro section
 - add navigation bar? (use fixed positioning)
