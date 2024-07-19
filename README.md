@@ -25,7 +25,6 @@ This [tutorial](https://www.youtube.com/watch?v=b0pkpcD8Ms4 'Tutorial'), which i
 ### TODO
 - dark mode with dark color pallete
 - update readme
-- rewrite intro section
 - add navigation bar? (use fixed positioning)
 - change font?
-- change color pallete to sdsu?
+- change color pallete? (maybe ground news sort of parchment paper thing)
