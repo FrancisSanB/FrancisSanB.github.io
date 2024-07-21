@@ -7,11 +7,11 @@ function Projects() {
     return(
         <div className="md:w-3/4 lg:w-1/2 xl:w-1/3 px-6 md:px-0 justify-center mx-auto text-left flex flex-col">
             <Title>Relevant Projects</Title>
-            <p className="text-base mb-3 font-medium">
+            <p className="text-base mb-3 font-fira">
                 My relevant projects. More information on my{' '}
                 <a 
                     href="assets/FrancisFernandez_Resume.pdf" target="_blank" 
-                    className="font-bold hover:underline underline-offset-2 decoration-2 decoration-red" rel="noreferrer noopener"
+                    className="font-bold hover:underline underline-offset-2 decoration-2 decoration-link dark:decoration-dark-link" rel="noreferrer noopener"
                 >
                     resume
                 </a>

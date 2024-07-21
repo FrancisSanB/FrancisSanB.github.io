@@ -8,11 +8,11 @@ function Timeline() {
         <div className="md:w-3/4 lg:w-1/2 xl:w-1/3 px-6 md:px-0 flex flex-col md:flex-row justify-center mx-auto text-left">
             <div className="w-full">
                 <Title>Relevant Experience</Title>
-                <p className="text-base mb-3 font-medium">
+                <p className="text-base mb-3 font-fira">
                     My relevant work experience. More information on my{' '}
                     <a 
                         href="https://www.linkedin.com/in/ffrancis47/" target="_blank" 
-                        className="font-bold hover:underline underline-offset-2 decoration-2 decoration-red" rel="noreferrer noopener"
+                        className="font-bold hover:underline underline-offset-2 decoration-2 decoration-link dark:decoration-dark-link" rel="noreferrer noopener"
                     >
                         LinkedIn
                     </a>
