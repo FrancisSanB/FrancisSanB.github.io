@@ -25,6 +25,7 @@ This [tutorial](https://www.youtube.com/watch?v=b0pkpcD8Ms4 'Tutorial'), which i
 - https://anniesun.ca/
 - https://dillion.io/projects
 - https://thehackershideout.com/
+- https://www.shaahana.tech/
 
 ## TODO
 - add navigation bar? (use fixed positioning)
