@@ -7,11 +7,21 @@
     <title>Francis Fernandez</title>
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" type="image/png" href="/favicon.ico">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-Ij4vZ8_t.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DsgJyMBp.css">
+    
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+      } else {
+          document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-BzAYbzMf.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BEMonEYN.css">
   </head>
   <body>
     <div id="root"></div>
