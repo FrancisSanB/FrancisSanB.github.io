@@ -27,5 +27,4 @@ This [tutorial](https://www.youtube.com/watch?v=b0pkpcD8Ms4 'Tutorial'), which i
 - https://thehackershideout.com/
 
 ## TODO
-- dark mode with dark color pallete
 - add navigation bar? (use fixed positioning)

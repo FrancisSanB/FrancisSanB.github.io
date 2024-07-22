@@ -1,9 +1,9 @@
 import React from "react";
 
-function TimelineItem({ company, imgUrl, title, duration, link}) {
+function ExperienceItem({ company, imgUrl, title, duration, link}) {
     return(
         <a href={link} target="_blank">
-            <ol className="flex flex-col hover:bg-link dark:hover:bg-dark-link rounded-lg my-3 p-3">
+            <ol className="flex flex-col hover:bg-hover dark:hover:bg-dark-hover rounded-lg my-3 p-3">
                 <li>
                     <p className="flex flex-row gap-4 items-center justify-start font-fira">
                         <a href={link} target="_blank">
@@ -18,7 +18,7 @@ function TimelineItem({ company, imgUrl, title, duration, link}) {
                                 <span className="inline-block px-2 py-1 font-semibold text-xs md:text-sm text-background dark:text-dark-background bg-title dark:bg-dark-title rounded-md">
                                     {company}
                                 </span>
-                                <h3 className="text-lg text-boxes dark:text-dark-boxes">
+                                <h3 className="text-base text-boxes dark:text-dark-boxes">
                                     {title}
                                 </h3>
                             </div>
@@ -33,4 +33,4 @@ function TimelineItem({ company, imgUrl, title, duration, link}) {
     )
 }
 
-export default TimelineItem;
+export default ExperienceItem;

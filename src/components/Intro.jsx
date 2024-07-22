@@ -1,22 +1,23 @@
-import React from "react";
-import Title from "./Title";
+import React, { useState, useEffect } from "react";
 
 function Intro() {
-    function handleClick() {
-        if (localStorage.theme === "dark" || !("theme" in localStorage)) {
-            //add class=dark in html element
-            document.documentElement.classList.add("dark");
+    //declare theme and set theme and instatiate those variables
+    const [theme, setTheme] = useState(localStorage.getItem('color-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+
+    //when 'theme' changes, add/remove dark element to root element
+    useEffect(() => {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
         } else {
-          //remove class=dark in html element
-            document.documentElement.classList.remove("dark");
+            document.documentElement.classList.remove('dark');
         }
-    
-        if (localStorage.theme === "dark") {
-            localStorage.theme = "light";
-        } else {
-            localStorage.theme = "dark";
-        }
-    }
+        localStorage.setItem('color-theme', theme);
+    }, [theme]);
+
+    //function used to toggle between the themes
+    const toggleTheme = () => {
+        setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    };
 
     return(
         <div className="md:w-3/4 lg:w-1/2 xl:w-1/3 pt-10 md:pt-20 px-6 md:px-0 justify-center mx-auto text-left flex flex-col">
@@ -55,51 +56,18 @@ function Intro() {
                         <title>Resume</title>
                     </svg>
                 </a>
-                <div onClick={handleClick}>
-                    <svg class="h-5 w-5 text-icon dark:text-dark-icon"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                    </svg>
-                </div>
+                <button id="theme-toggle" type="button" onClick={toggleTheme}>
+                    {theme == 'light' ? (
+                        <svg id="theme-toggle-dark-icon" class="h-5 w-5 text-icon"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                    ) : (
+                        <svg id="theme-toggle-light-icon" class="h-5 w-5 text-dark-icon"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    )}
+                </button>
             </div>
-            <div>
-                <Title>About Me</Title>
-            </div>
-            <p className="text-base mb-3 font-fira">
-                Hi and welcome to my website! I'm Francis, a fourth-year computer science student at{' '}
-                <a 
-                    href="https://www.sdsu.edu/" target="blank" 
-                    className="font-bold hover:underline underline-offset-2 decoration-2 decoration-link dark:decoration-dark-link" rel="noreferrer noopener"
-                >
-                    San Diego State University 
-                </a>
-                {' '}interested in the field of image processing and computer vision and excited about their applications in the health industry.
-                Currenlty I am working on different projects to increase my overall knowledge of computer science and dive deeper into the interactions
-                between computers and images.
-            </p>
-            <p className="text-base mb-9 font-fira">
-                In my free time, I like to{' '}
-                <a 
-                    href="https://letterboxd.com/alfredoo_sauce/films/diary/" target="blank" 
-                    className="font-bold hover:underline underline-offset-2 decoration-2 decoration-link dark:decoration-dark-link" rel="noreferrer noopener"
-                >
-                    watch movies, 
-                </a>
-                {' '}improve my{' '}
-                <a 
-                    href="https://innerfrench.com/" target="blank" 
-                    className="font-bold hover:underline underline-offset-2 decoration-2 decoration-link dark:decoration-dark-link" rel="noreferrer noopener"
-                >
-                     french
-                </a>
-                {' '}and, if I have the motivation, {' '}
-                <a 
-                    href="https://www.strava.com/athletes/97184275" target="blank" 
-                    className="font-bold hover:underline underline-offset-2 decoration-2 decoration-link dark:decoration-dark-link" rel="noreferrer noopener"
-                >
-                    run
-                </a>
-                .
-            </p>
         </div>
     )
 }

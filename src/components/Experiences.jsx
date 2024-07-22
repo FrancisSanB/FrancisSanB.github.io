@@ -1,6 +1,6 @@
 import React from "react";
-import timeline from "../data/timeline";
-import TimelineItem from "./TimelineItem";
+import experiences from "../data/experiences";
+import ExperienceItem from "./ExperienceItem";
 import Title from "./Title";
 
 function Timeline() {
@@ -17,8 +17,8 @@ function Timeline() {
                         LinkedIn
                     </a>
                 </p>
-                {timeline.map(item => (
-                    <TimelineItem
+                {experiences.map(item => (
+                    <ExperienceItem
                         company={item.company}
                         imgUrl={item.imgUrl}
                         title={item.title}

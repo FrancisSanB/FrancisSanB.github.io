@@ -2,7 +2,7 @@ export default [
     {
         title: 'Segmenting Multiple Sclerosis Lesions in the Brain',
         tags: ['Computer Vision', 'AI', 'Health'],
-        desc: 'Exploration of UNet and YOLOv8 algorithms in aegmenting multiple sclerosis lesions in the brain',
+        desc: 'Exploration of UNet and YOLOv8 algorithms in segmenting multiple sclerosis lesions in the brain',
         links: [
             {text: 'Code', url: 'https://github.com/FrancisSanB/MSLS-YOLOv8', icon: 'code'},
             {text: 'Paper', url: 'https://drive.google.com/file/d/1LkqqXEk70UOgMxT5IO0wHeeG_mKR-KrZ/view?usp=sharing', icon: 'paper'},
