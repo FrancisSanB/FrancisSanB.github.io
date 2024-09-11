@@ -12,7 +12,7 @@ function Footer() {
                     href="https://github.com/FrancisSanB/FrancisSanB.github.io" target="_blank"
                     className="font-bold hover:underline underline-offset-2 decoration-2 decoration-link dark:decoration-dark-link" rel="noreferrer noopener"
                 >
-                    July 2024
+                    September 2024
                 </a>
             </p>
         </div>
