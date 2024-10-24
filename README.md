@@ -29,3 +29,5 @@ This [tutorial](https://www.youtube.com/watch?v=b0pkpcD8Ms4 'Tutorial'), which i
 
 ## TODO
 - add navigation bar? (use fixed positioning)
+- add hackathon projects (and updated resume)
+- favorite articles and favorite essays by me?
