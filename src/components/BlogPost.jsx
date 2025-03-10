@@ -21,9 +21,9 @@ function BlogPost() {
     return (
         <div className="md:w-3/4 lg:w-1/2 xl:w-1/3 pt-10 md:pt-20 px-6 md:px-0 justify-center mx-auto text-left flex flex-col">
             <h1 className="text-title dark:text-dark-title font-garamond font-bold text-6xl md:text7xl mb-1 md:mb-3">{blog.title}</h1>
-            <div className="flex gap-2 mb-2">
+            <div className="flex flex-wrap gap-3 flex-row items-center justify-start text-xs md:text-sm mb-3 font-fira">
                 {blog.tags.map(tag => (
-                    <span key={tag} className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full">
+                    <span key={tag} className="inline-block px-2 py-1 border-2 border-boxes dark:border-dark-boxes rounded-md">
                         {tag}
                     </span>
                 ))}
